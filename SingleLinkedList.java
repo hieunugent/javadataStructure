@@ -34,7 +34,7 @@ public class SingleLinkedList {
 
 
         }
-        public static void printMyLinkedList (SingleLinkedList list){
+        public static void printMyLinkedList(SingleLinkedList list){
             Node curr__node = list.head;
             System.out.print("LinkedList: ");
             while(curr__node!= null){
@@ -87,7 +87,6 @@ public class SingleLinkedList {
                     deletebyKey(mylist, 1);
 
     }
-
-     }
+}
        
     
