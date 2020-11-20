@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class MyLinkedList {
+public class SingleLinkedList {
         Node head;
         static class Node{
             int data;
@@ -12,7 +12,7 @@ public class MyLinkedList {
                 next= null;
             }
         }
-        public static MyLinkedList insert(MyLinkedList list, int data){
+        public static SingleLinkedList insert(SingleLinkedList list, int data){
             // create the new node for data
             Node new__Node = new Node(data);
             new__Node.next= null;
@@ -34,7 +34,7 @@ public class MyLinkedList {
 
 
         }
-        public static void printMyLinkedList (MyLinkedList list){
+        public static void printMyLinkedList (SingleLinkedList list){
             Node curr__node = list.head;
             System.out.print("LinkedList: ");
             while(curr__node!= null){
@@ -44,7 +44,7 @@ public class MyLinkedList {
             System.out.println(" End List");
         }
         /// DELETE A NODE BY KEY
-        public static MyLinkedList deletebyKey (MyLinkedList list, int key){
+        public static SingleLinkedList deletebyKey (SingleLinkedList list, int key){
             // key in the head
             Node curr__node = list.head;
             Node prev = null;
@@ -72,7 +72,7 @@ public class MyLinkedList {
             return list;
         }
         public static void main(String[] args){
-                 MyLinkedList mylist = new MyLinkedList();
+                 SingleLinkedList mylist = new SingleLinkedList();
 
                     mylist= insert(mylist, 1);
                     mylist= insert(mylist, 2);
