@@ -73,6 +73,73 @@ public class DoubleLinkedList {
 
 
     }
+    public static DoubleLinkedList insertAfter(DoubleLinkedList list, int data, int key){
+         
+        Node curr__node = list.head;
+        // case is the end simple push
+        // case if there is no key match   
+        Node new__node = new Node(data);
+        while(curr__node.next!= null){// while it not the last one
+            if (curr__node.data == key){
+                ///do insert 
+                curr__node.next.prev = new__node;
+                new__node.next = curr__node.next;
+                curr__node.next = new__node;
+                new__node.prev = curr__node;
+               
+                return list;
+            }
+
+
+            curr__node= curr__node.next;
+        }      
+        // its is the last one
+        if (curr__node.data == key){
+            // do insert
+            curr__node.next = new__node;
+            new__node.prev= curr__node;
+            System.out.println("Done insert after" + key);
+        }
+        else{
+            System.out.println("unFound insert after" + key);
+        }
+        return list;
+    }
+    
+    public static DoubleLinkedList insertBefore (DoubleLinkedList list, int data, int key) {
+
+        Node curr__node = list.head;
+     
+
+        Node new__node = new Node(data);
+        // if the key is the head
+
+        if(curr__node.data == key){
+            curr__node.prev = new__node;
+            new__node.next = curr__node;
+            list.head = new__node;
+            return list;
+        }
+        while (curr__node != null) {// while it not the last one
+            if (curr__node.data == key) {
+                /// do insert
+                curr__node.prev.next = new__node;
+                new__node.prev = curr__node.prev;
+                curr__node.prev = new__node;
+                new__node.next = curr__node;
+
+                return list;
+            }
+
+            curr__node = curr__node.next;
+        }
+        // its is the last one
+        if (curr__node == null) {
+            // do insert=
+            System.out.println("unFound insert after" + key);
+        }
+        return list;
+    }
 
     public static void main(String[] args){
         DoubleLinkedList list = new DoubleLinkedList();
@@ -83,7 +150,13 @@ public class DoubleLinkedList {
         travelser(list);
         deleteNode(list, 2);
         travelser(list);
-
+        insertAfter(list, 6, 1);
+        insertAfter(list, 9, 4);
+        travelser(list);
+        insertBefore(list,7, 4);
+        insertBefore(list, 8, 1);
+        insertBefore(list, 0, 1);
+        travelser(list);
     }
 
 }
