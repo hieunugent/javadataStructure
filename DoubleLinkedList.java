@@ -63,15 +63,9 @@ public class DoubleLinkedList {
                 curr__node.prev.next = null;
                 curr__node.prev = null;
 
-            }
-            
-
-        
-        }
-        
+            }  
+        }        
         return list;
-
-
     }
     public static DoubleLinkedList insertAfter(DoubleLinkedList list, int data, int key){
          
@@ -103,6 +97,17 @@ public class DoubleLinkedList {
         else{
             System.out.println("unFound insert after" + key);
         }
+        return list;
+    }
+    // push the end of the list 
+    public static DoubleLinkedList push( DoubleLinkedList list, int data){
+        Node curr__node = list.head;
+        Node new__node = new Node(data);
+        while(curr__node.next != null){
+            curr__node = curr__node.next;
+        }
+        curr__node.next = new__node;
+        new__node.prev = curr__node;
         return list;
     }
     
@@ -156,6 +161,8 @@ public class DoubleLinkedList {
         insertBefore(list,7, 4);
         insertBefore(list, 8, 1);
         insertBefore(list, 0, 1);
+        travelser(list);
+        push(list, 10);
         travelser(list);
     }
 
