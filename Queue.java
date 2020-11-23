@@ -47,50 +47,46 @@ class Queue {
             return Integer.MIN_VALUE;
         return this.array[this.rear];
     }
+    
+    // public static void main (String [] args)
+    // {
+    //     Queue queue = new Queue(10);
+    //     System.out.println(queue.front  +" " + queue.rear);
+    //     queue.enqueue(10);
+    //     System.out.println(queue.front +" "+ queue.rear);
+    //     queue.enqueue(20);
+    //     System.out.println(queue.front +" "+ queue.rear);
+    //     queue.enqueue(30);
+    //     System.out.println(queue.front + " " + queue.rear);
+    //     queue.enqueue(40);
+    //     System.out.println(queue.dequeue() + " Dequeue from queue" );
+    //     System.out.println(queue.front + " " + queue.rear + " "+ queue.array[0]);
+    //     queue.enqueue(50);
+    //     queue.enqueue(600);
+    //     queue.enqueue(700);
+    //     queue.enqueue(80);
+    //     queue.enqueue(90);
+    //     queue.enqueue(100);
+    //     queue.enqueue(11);
+    //     System.out.println(queue.dequeue() + " Dequeue from queue" );
 
-
-
-
-
-
-
-
-
-
-
-
-
-    public static void main (String [] args)
-    {
-        Queue queue = new Queue(10);
-        System.out.println(queue.front  +" " + queue.rear);
-        queue.enqueue(10);
-        System.out.println(queue.front +" "+ queue.rear);
-        queue.enqueue(20);
-        System.out.println(queue.front +" "+ queue.rear);
-        queue.enqueue(30);
-        System.out.println(queue.front + " " + queue.rear);
-        queue.enqueue(40);
-        System.out.println(queue.dequeue() + " Dequeue from queue" + queue.front);
-        System.out.println(queue.front + " " + queue.rear + " "+ queue.array[0]);
-        queue.enqueue(50);
-        queue.enqueue(600);
-        queue.enqueue(700);
-        queue.enqueue(80);
-        queue.enqueue(90);
-        queue.enqueue(100);
-        queue.enqueue(11);
-        System.out.println(queue.dequeue() + " Dequeue from queue" + queue.front);
-
-        queue.enqueue(12);
+    //     queue.enqueue(12);
         
-        queue.enqueue(13);
+    //     queue.enqueue(13);
 
 
-    }
+    // }
 }
 // FIFO 
-// Enqueue add item when Queue is full set overflow condition
+// Enqueue add item when Queue is full set overflow condition  increase the Rear index to max, when size is not meet capacity then can continue to add more value to the queue
 // Dequeue remove item, item pop the same order of when they are push, if queue is empty Underflow condition
 // Front get item in front
 // rear get Item in last
+
+
+
+
+
+
+
+// DO by LinkedList
