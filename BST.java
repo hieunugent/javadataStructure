@@ -58,18 +58,33 @@ public class BST {
 
         }
     }
+    void postorder(){
+        System.out.println("post order");
+        postorderRec(root);
+    }
+    void postorderRec(Node root){
+        if (root != null){
+            postorderRec(root.left);
+            postorderRec(root.right);
+            System.out.println(root.key);
+        }
+       
+
+    }
     public static void main (String[] args){
         BST tree = new BST();
-        tree.insert(7);
-        tree.insert(2);
-        tree.insert(3);
-        tree.insert(4);
+        tree.insert(30);
+        tree.insert(10);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(50);
+        tree.insert(60);
+        tree.insert(55);
         tree.insert(5);
-      
-
         // print inorder traversal of the BST
         tree.inorder();
         tree.preorder();
+        tree.postorder();
     }
     
 }
