@@ -1,5 +1,8 @@
 import java.util.ArrayList;
-
+// create Hashnode to save any node for hashtable
+// the hash node must have key and value
+// create a Map to store all hashnode
+// Map will have number of bucket will have therea own size 
  class HashNode<K, V>{
      // create the hash code
      K key;
