@@ -17,11 +17,8 @@ class Program {
 		
 				result[i] = array[0]*array[2];
 			}
-			
-		}
-		
-		
-		
+             
+		}	
     return result;
   }
 	public int productof(int start, int end, int[] array){
