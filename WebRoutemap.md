@@ -183,7 +183,8 @@
         - positioned, for explicit position of an element
         - propeties: flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-items, align-content
         - flex items: order , flex-grow, flex-shrink, flex-basis, flex, align-self
-        
+        - flex responsive : display: flex, flex directtion
+
 
 
 
