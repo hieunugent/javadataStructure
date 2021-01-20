@@ -185,6 +185,9 @@
         - flex items: order , flex-grow, flex-shrink, flex-basis, flex, align-self
         - flex responsive : display: flex, flex directtion
 
+# JavaScript
+- getELementById(): document.getElementById("demo").innerHTML ="hello javascript";
+- place inside the <script>
 
 
 
