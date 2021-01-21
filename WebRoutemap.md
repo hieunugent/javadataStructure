@@ -186,8 +186,13 @@
         - flex responsive : display: flex, flex directtion
 
 # JavaScript
+## instroduction:
 - getELementById(): document.getElementById("demo").innerHTML ="hello javascript";
 - place inside the <script>
+-  Js vs Java language:
+        - resembles Java but does not have Java static typing and stong type check
+        - js follows most java expression syntax, naming convention and basic control flow constructs
+
 
 
 
