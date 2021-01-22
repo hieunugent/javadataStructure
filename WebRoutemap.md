@@ -192,6 +192,18 @@
 -  Js vs Java language:
         - resembles Java but does not have Java static typing and stong type check
         - js follows most java expression syntax, naming convention and basic control flow constructs
+        - JS also support function without any apecial declarative requirements
+        - dont need to declare all var, classes ,and methods
+        - dont have to concern with whether methods are public private protected
+        - Java is class based programming language designed for fast execution and type safety
+        - type safety means that you cant cast a java integer into an object reference or access private memory by corrupting Java Bytecodes, Class-based model means that programming consist exclusive  of calss and their methpd
+        - inheritance nad strong type resquires tightly coupled object hiearchies
+        - java more complex than javascript
+- JavaScript and ECMAScript
+        - The ECMAScript specification is a set of requirements for implemenitn EcmaScript. 
+        - ES doc is not intended to help scipt programmers. use js doc for information when writing scripts
+        - js doc descripber aspects of language that are appropriate for a js progammer
+
 
 
 
