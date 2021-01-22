@@ -203,10 +203,57 @@
         - The ECMAScript specification is a set of requirements for implemenitn EcmaScript. 
         - ES doc is not intended to help scipt programmers. use js doc for information when writing scripts
         - js doc descripber aspects of language that are appropriate for a js progammer
+## basic:
+- comments  : // /***/ 
+- Declarations: var let const
+- Data types:
+        - primitives
+                - Boolean
+                - null
+                - undefined
+                - Number
+                - BigInt
+                - String
+                - Symbol
+        - Object
 
+- Converting string to number:
+        - parseInt()
+        - parserFloat()
 
-
-
+- Literals
+        - Array
+        - Boolean
+        - Floating-point
+        - Numeric
+        - Object
+        - RegExp
+        - String
+- Exception handling statements
+        - throw expression
+        - try ... catch
+        - try{ 
+        -       func(param) // this may throe an error
+        -}catch (e){
+        -       handleError(e) // if an error occurrde, handle it
+        -}finally{ 
+        -       closeMyfile() // always close the resource
+        - }
+- Regular expression
+        - let re = /ab+c/;
+        - let re = new RegExp('ab+');
+        - Character classes \, ., \cX, \d, \D, \fooo, [\d]
+        - AsserTions : ^, $, x(?=y), include boundaries, which indicate the beginnings and ending of lines and words, and other patterns indicating in some way that a match is posible
+        - sepecial character such as * then using Backslash 
+        - exec() return array info or null on mismatch
+        - test() return true false
+        - match() return all of matches capturing or null
+        - matchAll() iterator containing all of the matches
+        - search() test for a match in a string return index match 
+        - replace() search match and replce match 
+        - replaceAll() search all  and replace all
+        - split() used regular expression or a fixed string to break a string into an array of substrings
+        
 
 
 
