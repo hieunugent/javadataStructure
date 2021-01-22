@@ -253,7 +253,23 @@
         - replace() search match and replce match 
         - replaceAll() search all  and replace all
         - split() used regular expression or a fixed string to break a string into an array of substrings
-        
+- class-based vs. prototype-based languages
+        - object-oriented languages: classes and instances
+        - class defines all of the properties that characterize a certain set of object
+        - an Instance, on the other hand, is the instantiation of a class
+        - subclasses and inheritance
+        - js all object can inherit from another object
+        - define and create a set of object with constructor functions
+        - uising new to creation of new object
+        - construction of object hierarchy :
+                                 - java :construct an object hierachy by using class definitions to define subclasses of existing classes
+                                 - js: construct by assigning an object as the prototype associated with a constructor function
+        - Inheritance model: 
+                                - java: by following the class chain
+                                - js: by followign prototype chain
+        - extension of properties:
+                                - java": class definition specifies all properties of all instances of a class. Cannot add properties dynamically at run time
+                                - js: constructor function or prototype specifies an initial set of properties. can add or remove dynamically to individual objects or to the entire set of object
 
 
 
