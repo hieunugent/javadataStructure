@@ -270,6 +270,30 @@
         - extension of properties:
                                 - java": class definition specifies all properties of all instances of a class. Cannot add properties dynamically at run time
                                 - js: constructor function or prototype specifies an initial set of properties. can add or remove dynamically to individual objects or to the entire set of object
+- Promise:
+        - is an object representing the eventual completion or failure of an asynchronous operation
+        - a promise is return object to which you attach callbacks, instead of passing callbacks into a function
+        - chaining : const promise = dosomething();
+        -            const promise2= promise.then(successCallback, failureCallBack)
+        - it is possible to chain after a failure such as catch
+        - you migght recall seeing failurecallback three times in the pyramid of doom earlier compared to only once at the end of the promise chain 
+        - Rejection event: whenever a promise is rejected , one of two events  is sent to the global scope:
+                - rejectionhandled: sent when promise is rejected, after that rekection has been handled by the executors reject function
+                - unhandledredjection: sent when a promise is rejected but there is no rejection handler availabler
+        - there make it possible to offer fallback error handing for promises, as well as to help debug issues with your promise managemen. these handlers are globalper context, so all errors will go to the same event handlers, regardless of source 
+        - one case of special usefulness when writing code for node.js its common that modules you include in your project may have unhandle rejected promises
+        logged to the console by the Node.js runtime by adding handler in node.js
+        - process.on("unhandledRejection", (reason, promise)=> {
+                // the code what todo and should do here
+        })
+        - in an ideal world all asynchronous functions would already return promises. unforturnately, some APIs still expect success and or failure callbacks to be passed in the old way
+        - .resolve(), .reject()
+        - .all(), .race() tools for running asynchronous operation in parallel
+        - composeAsync() will accept any number of functions as arguments, and will return a new function that accepts an initial valeu to be passed through the composition pipeline
+        
+
+                
+
 
 
 
