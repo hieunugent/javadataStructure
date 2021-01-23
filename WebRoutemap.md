@@ -290,7 +290,9 @@
         - .resolve(), .reject()
         - .all(), .race() tools for running asynchronous operation in parallel
         - composeAsync() will accept any number of functions as arguments, and will return a new function that accepts an initial valeu to be passed through the composition pipeline
-        
+        - Timming 
+        - Nesting
+
 
                 
 
