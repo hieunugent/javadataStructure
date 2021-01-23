@@ -308,7 +308,15 @@
                 - querySelectorAll()
                 - getElementById()
                 - getElementByTagName()
+- Fetch API:
+        - diff from jQuery.ajax():
+                - fetch wont reject on http error status
+                - fetch cna receive cross site cookie
+                - fetch wont sent cookies
+        - supplying resquest options:
+                - method can optionally accept a second parameter, and init object that allows you to control a number of different setting
                 
+
 
 
 
