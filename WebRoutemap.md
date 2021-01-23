@@ -292,6 +292,25 @@
         - composeAsync() will accept any number of functions as arguments, and will return a new function that accepts an initial valeu to be passed through the composition pipeline
         - Timming 
         - Nesting
+- DOM manipulation:
+        - to gain familiarity with the core DOM APIs, and the other APIs commonly associated with DOM and document manipulation 
+        - Navigator:represent the state and identify  of teh browser exist on the web, can use this object to retrieve things like the user's preferred language, a media stream from the users webcame,etc
+        - Window: is the browser tap taht a web page is loaded into, is object window in js, manipulate the doccument loaded into that window store data spaecific to that document on the client-side, attach an event handler to current window 
+        - Document: is the actual page loaded into the window, can using this object to manipulate the HTML CSS 
+                - element node: an element as it exist in the DOM
+                - root node: top node in the tree which in the case of hTMl is always HTML
+                - child node: a node directly inside another node 
+                - descendant node : a node anywhere inside another node
+                - parent node: a node which has a node inside
+                - sibling nodes: nodes that sit on the same level in the DOM
+                - Tex node : a node containing a text string
+                - querySelector()
+                - querySelectorAll()
+                - getElementById()
+                - getElementByTagName()
+                
+
+
 
 
                 
