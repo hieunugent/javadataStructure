@@ -311,11 +311,45 @@
 - Fetch API:
         - diff from jQuery.ajax():
                 - fetch wont reject on http error status
-                - fetch cna receive cross site cookie
+                - fetch can receive cross site cookie
                 - fetch wont sent cookies
         - supplying resquest options:
                 - method can optionally accept a second parameter, and init object that allows you to control a number of different setting
-                
+        - Send a Request to a Server
+                - open("GET", "ajax_info.txt, true); specifies the type of request,
+                                - method: the type of request: GET or POST
+                                - url: the server (file) location
+                                - async: true(asynchronous) or false(sychronous)
+                - send();  sends the request to the server used for GET
+                - sent(string): sends the request to the server used for POST
+                -POST over GET for cached file is not an option, sending a large amount of dta to the server, sending user input, POST is more robust and secure than GET
+        - Synchronous Request
+        - Server REsponse:
+                - onreadystatechange : defines a function to be called when the readystate property changes
+                - readyState :
+                        - holds the statis of the  XMLHTTPRequest
+                        - 0 : request not initialized
+                        - 1: server connecttion established
+                        - 2: request received
+                        - 3: processing request
+                        - 4: request finished and response is ready
+                - status:
+                        - 200: OK
+                        - 403: Forbidden
+                        - 404: page not found
+                - statusText:
+                        Returns the status-text
+                - property:
+                - responseText get teh response data as a string
+                - responseXML get teh response data as XML data
+                - methods:
+                - getResponseHeader(): return specific header information form the server resource
+                - getAllResponseHeaders(): return all the header information from the server resource
+        
+
+
+
+ 
 
 
 
