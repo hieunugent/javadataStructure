@@ -345,7 +345,15 @@
                 - methods:
                 - getResponseHeader(): return specific header information form the server resource
                 - getAllResponseHeaders(): return all the header information from the server resource
-        
+- ES6:
+        - let keyword
+        - const keyword
+        - arrow function 
+        - class classname{constructor(){....}} not an object it is a template for javascript object
+        - promise
+        - .find()
+        - .findIndex()
+        - Number.isInteger(), isSafeInteger(), isFinite(), isNaN()
 
 
 
