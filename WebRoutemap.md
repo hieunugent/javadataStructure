@@ -354,8 +354,34 @@
         - .find()
         - .findIndex()
         - Number.isInteger(), isSafeInteger(), isFinite(), isNaN()
-
-
+- modular Javascript:
+        - dependdent on the import and export
+- Hoisting is  default behabvior of moving declarations to the top
+        - variable can use before it declare
+        - overlooked behavior of javaScript
+        - using let variable before it is declared will result in ReferenceError
+        - to avoid bugs, always declare all variables at the beginning of every scope
+- "use strict" can not use undeclared variables
+        - write secure mode
+        - using an oject without declaring it is not allowed
+        - deleting a variable is not allowed
+        - deleting a function is not allowed
+        - deleting an undeletable property is not allowed
+        - duplicating a paramenter name is not allowed
+        - octal numeric literal are not allowed
+        - octal  escapse character are not allowed
+        - writing to a read-only, get-only property is not allowed
+        - argumnets with can not use as variable
+        - for security reasons, eval() is not allowed to create variable in the scope from which it was called
+        - for "this" in strict mode it will return underfined and functions in normal mode will return the global object
+- Prototypes:
+        - object constructor:
+- Shadow DOM:
+        -  is a key part of this, providing a way to attach a hidden separated DOM to an element
+        - shadow host : the regular DOm node that the shadow DOM is attached to
+        - shadow tree:  The DOM tree inside teh shadow DOM
+        - Shadow boundary: the place where the shadow DOM ends, and the regular DOM begins
+        - shadow root: the root node of the shadow tree
 
  
 
