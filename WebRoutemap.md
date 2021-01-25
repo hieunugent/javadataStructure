@@ -382,8 +382,45 @@
         - shadow tree:  The DOM tree inside teh shadow DOM
         - Shadow boundary: the place where the shadow DOM ends, and the regular DOM begins
         - shadow root: the root node of the shadow tree
+- basic usage:
+        - element.attachShadow() with mode : 'open', 'closed'
+        - element.shadowRoot;
+- Event Bubbling :
+        - event propagation model wherein listeners are fired from the target of the event, up
+- Capturing phase: the event goes down to the element
+- target phase : the event reached the target elemnet
+- bubbling phase: the event bubbles up from the element.
+# Web Security Knowlege:
+## HTTP :  
+        - send data between a web browser and a website
+        - no one else can access the data, Because it used TLS protocol to encrypt communication
+- How it work ?
+        - uses encryption communication protoco, Named Transport Layer Security
+        - was known as Secure Sockets Layer(SSL)
+        - encryption uses two keys:   
+                - public key: this shared between the browser and website
+                - private key : this key used to decrypt information encrypted by the public key and it not shared out of the server
+- TLS ?
+        - the most protocol in use and designed to facilitate privacy, data security for communications over the internet
+        - the use case o TLS is encrypting the communication between  applicaiton and servers, emails, messaging voice by Use (VoIP)
+        - must install the TLS and SSL certification
+        - TLS handshake step
+        - determind the version of the TLS will use during  the session
+        - authenticate the identity of the server by using TLS certificate
+        - generate the session key for use during the session after the handshake process ended
+- SSL? 
+        - secure Socket Layer. an encryption base internet security protocol, it was founded for the ensuting of the integrity and privacy of the connections of the internet by Netscape
+- CORS?
+        - Crossing Origin Resource SHaring is Machanism that uses HTTP header to specify which outer origin have access to the local asset and 
+        - how can access it  that is mean we can make a white list for the allowed crossing origins that has access to our assets
+        - when the site makes a get request to get resource from the out server, the browser add a header that contain s the origin like http://www.example.com
+        - server receives req and searches in it white list Access-Control-Allow-Origin: *
+        - if the server specifies the methods it will compare the request  method with its example
+        
 
- 
+
+
+
 
 
 
