@@ -416,7 +416,14 @@
         - when the site makes a get request to get resource from the out server, the browser add a header that contain s the origin like http://www.example.com
         - server receives req and searches in it white list Access-Control-Allow-Origin: *
         - if the server specifies the methods it will compare the request  method with its example
-        
+- OWASP?
+        - security knowlege framework
+        - static code analysis
+        - code reviews
+        - security automation testing
+        - penetration test
+- Content Security Policy:
+        - is an added layer of security that helps to detect and mitigate certain type of attacks, including cross site scripting and data injection attacks        
 
 
 
