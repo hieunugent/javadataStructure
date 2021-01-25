@@ -424,8 +424,41 @@
         - penetration test
 - Content Security Policy:
         - is an added layer of security that helps to detect and mitigate certain type of attacks, including cross site scripting and data injection attacks        
-
-
+# CSS Architecture:
+- Efficiency: to reduce the time spent thinking about how things should be done and increase the time doing things
+- Consistency: want to make sure all developers are on the same page
+## CSS Global:
+- rule that apply crosswise to all components
+- use tokens to keep the design consistent across all compoments and reduce the size of their CSS
+## BEM:
+- Blocks ELements Modifiers is naming methodology aimed at creating resusable components
+- block__element--modifier
+## Utilitty Class
+- todo only one thing
+# CSS preprocessor:
+- is the program that lets you generate CSS from the preprocessor's own unique Syntax
+- many preprocessors , but the most css preprocessor will add some feature that dont exist in pure CSS, such as mixin, nesting, selector, inheritance selector, 
+- must install css compiler on your web server OR compile to dev environment then upload compiled css file to webserver
+# npm script
+- open source developers from every continent use npm to share and borrow packages, adn many organization use npm to manage private development as well
+- three distinct components (the website, the command line interface, the registry)
+## website: 
+- to discover packages, set up profiels and manage other aspects of your npm experience: can set up  organization to manage access to public or private package
+## CLI:
+- runs from terminal, and is how most developer interact with npm 
+## Registry:
+- a large public database of JavaScript software and the meta-information surrounding it
+## Task Runner
+# WebPack
+## Core Concepts:
+- Entry: An entry point indicated which module webpack should use to begin building out its internal dependency graph, webpack will figure out which other modules and libraries that entry point depends on
+- Output: propety tells webpack where to emit the bundle it creates and how to name these files, it default  to ./dist/main.js for main output file and to the ./dist folder for any other generate file
+        - can configure this part of the process by specifying an output field in your configuration: webpack.config,js
+        - output.filename and output.path properties to tell webpack the name of our bundle and where we want ro be emmited to
+- Loaders:
+- Plugins:
+- Mode
+- Browser Compatibility
 
 
 
