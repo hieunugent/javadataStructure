@@ -485,12 +485,66 @@
         - state: the source of truth that drives our app
         - view: a declaretive description of the UI based on the current state
         - actions, the events that occur in the app based on uper input , and trigger unpdates in the state
-                - you can think of an action as an event that describes something that happened in the application
         - multiple components that need to share and use the same state
         - immutable it can never ve changed: your code must make copies of existing objects/arrays, and then modify the copies
+- Teminology:
+        - Actions: you can think of an action as an event that describes something that happened in the application
+        - actions creator is function that creates and return an action object
+- reducers: receives the current state and an action object : can think it as an event listener which handles events based on the received action (event ) type - logic step  check to see if the reducer cares about this action: if so make a copy of the state update the copy with new values and return it - otherwise, return the existing state unchanged: 
+```javascript
+                const initialState = { value: 0 }
+                function counterReducer(state = initialState, action) {
+                // Check to see if the reducer cares about this action
+                if (action.type === 'counter/increment') {
+                // If so, make a copy of `state`
+                return {
+                ...state,
+                // and update the copy with the new value
+                value: state.value + 1
+                }
+                }
+                // otherwise return the existing state unchanged
+                return state
+                }
+```
+- store : is created by passing in a reducer, and has a method called getState that return the current state value
+```javascript
+import { configureStore } from '@reduxjs/toolkit'
 
+const store = configureStore({ reducer: counterReducer })
 
+console.log(store.getState())
+// {value: 0}
+```
+- Dispatch 
+        - teh redux store has a method called dispatch . the only way to update the state is to call store.dispatch() and pass in an action object
+        - can think of dispatching actions as "triggering an event"
+```javascript
+store.dispatch({ type: 'counter/increment' })
 
+console.log(store.getState())
+// {value: 1}
+```
+- Selectors:
+        - are functions that know how to extract specific pieces of information form a store state value, As an application grows bigger this can help avoid repeating logic as different parts of the app need to read the same date:
+
+```javascript
+const selectCounterValue = state => state.value
+
+const currentValue = selectCounterValue(store.getState())
+console.log(currentValue)
+// 2
+```
+## Redux Application Data Flow
+- one way data flow
+        - State describes the condition of the app at a specific point in time
+        - the UI is rendered based on that state
+        - when something happens, the state is updated based on what occurred
+        - the UI re-renders based on the new state
+- more detail step:
+        - initial setup
+        - Update
+        
 
 
 
