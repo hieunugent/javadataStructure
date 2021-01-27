@@ -116,36 +116,36 @@
 - Alt tags for images
 # CSS:
 ## position : 
-        - relative  to it normal position, 
-        - static is by default according to normal flow, 
-        - fixed is relative to viewport same place when pages is scrolled
-        - absolute is relative to nearest positioned ancestor
+- relative  to it normal position, 
+- static is by default according to normal flow, 
+- fixed is relative to viewport same place when pages is scrolled
+- absolute is relative to nearest positioned ancestor
 ## Specificity:
-        - there are two or more conflicting CSS rules that point to same element, will follow the Hierarchy rule
-                - Inline style :attached directly to the element to be style
-                - IDs: an I is a unique identifier the page element
-                - Classes, attributes and pseudo-classes: .classes, [atributes], pseudo-classes such as :hover, :focus
-                - Elements and pseudo-elements: h1, div, ... :before, :after
-        - Equal specificity: latest rule count
-        - the more specific than will be applied 
-        - contextual selector are more specifich than single element selector : the embedded style sheet is closer to the element to be styled
-        - A class selector beats any number of element selectors :  a class selector such as .intro beats h1, p, div, 
-        - the universal selector and inherited values have a specificity of 0
+- there are two or more conflicting CSS rules that point to same element, will follow the Hierarchy rule
+        - Inline style :attached directly to the element to be style
+        - IDs: an I is a unique identifier the page element
+        - Classes, attributes and pseudo-classes: .classes, [atributes], pseudo-classes such as :hover, :focus
+        - Elements and pseudo-elements: h1, div, ... :before, :after
+- Equal specificity: latest rule count
+- the more specific than will be applied 
+- contextual selector are more specifich than single element selector : the embedded style sheet is closer to the element to be styled
+- A class selector beats any number of element selectors :  a class selector such as .intro beats h1, p, div, 
+- the universal selector and inherited values have a specificity of 0
 ## Media Queries:
-        - use to response to media types
-        - such as : 
-                - width and height of the viewport
-                - w and h of device
-                - orientation
-                - resolution
-        - @media not|only mediatype and (expressions){
-                CSS-code;
-        }
-        - mediatype: 
-                - all: used for all media type devices
-                - print: used for printers
-                - screen: used for computer screens, * screen
-                - speech: used for screenreader that read the page out loud
+- use to response to media types
+- such as : 
+        - width and height of the viewport
+        - w and h of device
+        - orientation
+        - resolution
+- @media not|only mediatype and (expressions){
+        CSS-code;
+}
+- mediatype: 
+        - all: used for all media type devices
+        - print: used for printers
+        - screen: used for computer screens, * screen
+        - speech: used for screenreader that read the page out loud
 - Float: 
         - property that is used for positioning and formatting content let an image float left to the text in a containner
         - left right none inherit
