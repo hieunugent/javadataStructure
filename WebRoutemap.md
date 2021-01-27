@@ -465,8 +465,8 @@
 - Browser Compatibility
 # Modern CSS:
 ## CSS Moduler: 
-        - all class names nad animation names are scopeb locally by default
-        - is not in offical spec but rather a process in build step with help of webpack that changes class names and selector to be scoped
+- all class names nad animation names are scopeb locally by default
+- is not in offical spec but rather a process in build step with help of webpack that changes class names and selector to be scoped
 # ReactjS- Redux:
 ## Redux:
  - Redux is a pattern and library for managing and updating application state, suing event called "actions"
@@ -536,14 +536,14 @@ console.log(currentValue)
 // 2
 ```
 ## Redux Application Data Flow
-- one way data flow
-        - State describes the condition of the app at a specific point in time
-        - the UI is rendered based on that state
-        - when something happens, the state is updated based on what occurred
-        - the UI re-renders based on the new state
+- one way data flow:
+        -- State describes the condition of the app at a specific point in time
+        -- the UI is rendered based on that state
+        -- when something happens, the state is updated based on what occurred
+        -- the UI re-renders based on the new state
 - more detail step:
-        - initial setup
-        - Update
+        -- initial setup
+        -- Update
 - 
 
 
