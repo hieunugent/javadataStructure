@@ -91,36 +91,36 @@
 - rel: the relationship between a linked resource and the current document
 - target: where to display the responsethat is received after submitting the form 
 # Elements:
-- <form> : an HTML form for user input
-- <input>: an input control 
-- <textarea> a multiline input control
-- <label> is a lablel for an input
-- <fieldset> related element in form 
-- <legend> a caption for a fieldset element
-- <select> a drop-down list
-- <optgroup> a group of related options in a drop-down list
-- <option> an option in a drop-down list
-- <button> 
-- <datalist> alist of predefined options for input control
-- <output> defines the result of a calculation
+- "<form>": an HTML form for user input
+- '<input>': an input control 
+- '<textarea>' a multiline input control
+- '<label>' is a lablel for an input
+- '<fieldset>' related element in form 
+- '<legend>' a caption for a fieldset element
+- '<select> 'a drop-down list
+- '<optgroup>' a group of related options in a drop-down list
+- '<option>' an option in a drop-down list
+- '<button>' 
+- '<datalist>' alist of predefined options for input control
+- '<output>' defines the result of a calculation
 
-- Accessibility:
-        - provide the user a good way to navigate and interact with  your site, make HTMl code as sematic as possible 
-        - non-sematic : div span
-        - sematic form table article
-- SEO:
-        - tags for SEO that will affect how your website perform on the internet
-        - using <title> tag how searches see your page in google and BIng
-        - Meta Description tags
-        - Header tags
-        - Alt tags for images
+# Accessibility:
+- provide the user a good way to navigate and interact with  your site, make HTMl code as sematic as possible 
+- non-sematic : div span
+- sematic form table article
+# SEO:
+- tags for SEO that will affect how your website perform on the internet
+- using <title> tag how searches see your page in google and BIng
+- Meta Description tags
+- Header tags
+- Alt tags for images
 # CSS:
-- position : 
+## position : 
         - relative  to it normal position, 
         - static is by default according to normal flow, 
         - fixed is relative to viewport same place when pages is scrolled
         - absolute is relative to nearest positioned ancestor
-- Specificity:
+## Specificity:
         - there are two or more conflicting CSS rules that point to same element, will follow the Hierarchy rule
                 - Inline style :attached directly to the element to be style
                 - IDs: an I is a unique identifier the page element
@@ -131,7 +131,7 @@
         - contextual selector are more specifich than single element selector : the embedded style sheet is closer to the element to be styled
         - A class selector beats any number of element selectors :  a class selector such as .intro beats h1, p, div, 
         - the universal selector and inherited values have a specificity of 0
-- Media Queries:
+## Media Queries:
         - use to response to media types
         - such as : 
                 - width and height of the viewport
