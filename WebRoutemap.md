@@ -77,32 +77,32 @@
 - <input type=""> with type such as text, radio, checkbox, submit, button
 - <lable> define a label for many form element
 - attributes: 
-                - action attribute:
-                                 - defines the action to be performed when the form is submitted 
-                                 - the form  data is sent to a file on the server when the user clicks on the submit button
-                                 - ex: action="/action_page.php" it will sent this file contain a server-side script that handles the form data
-                - accept-charset:
-                        - specifies the character encodings used for form submission
-                - autocomplete: whether a form should have autocomplete on or off
-                - enctype: how the form-data should be encoded when submitting it to the server
-                - method: the HTTP method to use when sending form-data
-                - name: the name of the form 
-                - novalidate: that the form should not be validated when submitted
-                - rel: the relationship between a linked resource and the current document
-                - target: where to display the responsethat is received after submitting the form 
-- Elements:
-        - <form> : an HTML form for user input
-        - <input>: an input control 
-        - <textarea> a multiline input control
-        - <label> is a lablel for an input
-        - <fieldset> related element in form 
-        - <legend> a caption for a fieldset element
-        - <select> a drop-down list
-        - <optgroup> a group of related options in a drop-down list
-        - <option> an option in a drop-down list
-        - <button> 
-        - <datalist> alist of predefined options for input control
-        - <output> defines the result of a calculation
+- action attribute:
+                        - defines the action to be performed when the form is submitted 
+                        - the form  data is sent to a file on the server when the user clicks on the submit button
+                        - ex: action="/action_page.php" it will sent this file contain a server-side script that handles the form data
+- accept-charset:
+        - specifies the character encodings used for form submission
+- autocomplete: whether a form should have autocomplete on or off
+- enctype: how the form-data should be encoded when submitting it to the server
+- method: the HTTP method to use when sending form-data
+- name: the name of the form 
+- novalidate: that the form should not be validated when submitted
+- rel: the relationship between a linked resource and the current document
+- target: where to display the responsethat is received after submitting the form 
+# Elements:
+- <form> : an HTML form for user input
+- <input>: an input control 
+- <textarea> a multiline input control
+- <label> is a lablel for an input
+- <fieldset> related element in form 
+- <legend> a caption for a fieldset element
+- <select> a drop-down list
+- <optgroup> a group of related options in a drop-down list
+- <option> an option in a drop-down list
+- <button> 
+- <datalist> alist of predefined options for input control
+- <output> defines the result of a calculation
 
 - Accessibility:
         - provide the user a good way to navigate and interact with  your site, make HTMl code as sematic as possible 
