@@ -455,7 +455,7 @@
         - Usage: entry: string | [string]  // single Entry syntax
         - entry : {<entryChunkName> string| [string]}{}
 - Output: propety tells webpack where to emit the bundle it creates and how to name these files, it default  to ./dist/main.js for main output file and to the ./dist folder for any other generate file
-        - can configure this part of the process by specifying an output field in your configuration: webpack.config,js
+        - can configure this part of the process by specifying an output field in your configuration: webpack.config.js.
         - output.filename and output.path properties to tell webpack the name of our bundle and where we want ro be emmited to
 - Loaders:
         - out of the box, webpack only understands JavaScript and JSON files. Loaders allow webpack to process other types of files and convert them into valid modules that can be consumed by your application and added to the dependency graph
@@ -463,7 +463,7 @@
 - Plugins:
 - Mode
 - Browser Compatibility
-# MOdern CSS:
+# Modern CSS:
 ## CSS Moduler: 
         - all class names nad animation names are scopeb locally by default
         - is not in offical spec but rather a process in build step with help of webpack that changes class names and selector to be scoped
