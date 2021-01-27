@@ -463,6 +463,32 @@
 - Plugins:
 - Mode
 - Browser Compatibility
+# MOdern CSS:
+## CSS Moduler: 
+        - all class names nad animation names are scopeb locally by default
+        - is not in offical spec but rather a process in build step with help of webpack that changes class names and selector to be scoped
+# ReactjS- Redux:
+## Redux:
+ - Redux is a pattern and library for managing and updating application state, suing event called "actions"
+ - Redux helps manage global state - state that is needed across many parts of your application
+ - need Redux 
+        - when haev large amount of application state that are needed in many place in the app
+        - the app state is updated frequently overtime
+        - logic to update that state may be complex
+        - the app has a medium or a large-sized codebase, and might be worked on the many people
+- react-redux package
+- redux toolkit: is our recommended approach for writing Resuc logic, builds in our suggested best practices, simplifies most REDux task, prevent common mistakes , and make it easier to write Redux application
+- redux devtool extension
+        - show a history of the changes to state your Redux store over time
+        - this allows you to debug your application effectively, including using powerful techniques like time travel debug
+- state management:
+        - state: the source of truth that drives our app
+        - view: a declaretive description of the UI based on the current state
+        - actions, the events that occur in the app based on uper input , and trigger unpdates in the state
+                - you can think of an action as an event that describes something that happened in the application
+        - multiple components that need to share and use the same state
+        - immutable it can never ve changed: your code must make copies of existing objects/arrays, and then modify the copies
+
 
 
 
