@@ -91,18 +91,18 @@
 - rel: the relationship between a linked resource and the current document
 - target: where to display the responsethat is received after submitting the form 
 # Elements:
-- "<form>": an HTML form for user input
-- '<input>': an input control 
-- '<textarea>' a multiline input control
-- '<label>' is a lablel for an input
-- '<fieldset>' related element in form 
-- '<legend>' a caption for a fieldset element
-- '<select> 'a drop-down list
-- '<optgroup>' a group of related options in a drop-down list
-- '<option>' an option in a drop-down list
-- '<button>' 
-- '<datalist>' alist of predefined options for input control
-- '<output>' defines the result of a calculation
+- form: an HTML form for user input
+- input: an input control 
+- textarea: a multiline input control
+- label: is a lablel for an input
+- fieldset: related element in form 
+- legend: a caption for a fieldset element
+- select: a drop-down list
+- optgroup: a group of related options in a drop-down list
+- option: an option in a drop-down list
+- button: 
+- datalist: alist of predefined options for input control
+- output: defines the result of a calculation
 
 # Accessibility:
 - provide the user a good way to navigate and interact with  your site, make HTMl code as sematic as possible 
