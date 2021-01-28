@@ -16,7 +16,7 @@
    - TLD- top level domain : 
         - the most generic TLDs .com .org .net don't require web services to meet any particular
         - .us .fr or .se require the service to be provided in a given language or hosted in a certain country
-        - . gov only allowed to be used by the government department
+        - .gov only allowed to be used by the government department
         - .edu TLD only for use by education
 ## What is HTTP?
    - Hyper text Transfer Protocol
@@ -544,8 +544,20 @@ console.log(currentValue)
 - more detail step:
         -- initial setup
         -- Update
-- 
-
+- create the feature
+- create the store
+- any React componet can use data from the redux store as needed:
+        - any componet can read any data that is in the redux store
+        - multiple components can read the same data, even at the same time
+        - componets should extract the smallest amount of data they need to rednder themselves
+        - components can combine values from props state, and the Redux store to determind what UI they need to render, they can read multiple piece of  data form the rtore nad reshape the daya as needed fir display
+        - any component can dispatch  actions to cause state updates
+- redux action creators can prepare action objects with the right contents
+        - createSlice and createAction can accept a prepare callback that return the action payload
+        - Unique Id and other random value should be put in the action, not calculated in the reuducer
+- Reducers should contain the actual state update logic
+        - Reducers can contain whatever logic is needed to calculate the next state
+        - Action objects should contain just enough info to describe what happened
 
 
 
