@@ -572,6 +572,13 @@ Selectors are functions that get the Redux state as an argument, and return some
         - Generated action creators like fetchPosts dispatch those actions based on the Promise you return
         - You can listen for these action types in createSlice using the extraReducers field, and update the state in reducers based on those actions.
         - Action creators can be used to automatically fill in the keys of the extraReducers object so the slice knows what actions to listen for.
+- React middleware come in when we want to have async logic interact with the store by dispatch or checking the current store state, allow different kind os async logic to interact with the store . this allows you to write code that can dispatch actions and check the store state , while keeping that logic separate fom UI
+- the most common async middleware is REDUX-THUNK- write plain functions that may contain async logic directly
+- redux toolkits configureStore function automatically sets up the thunk middleware by default, adn we recommend using thunks as the standard approach for writing  async logic with redux
+- Thunk Functions
+        - one the thunk middleware has been added to the redux store, it allow you to pass thunk functions directly to store.dispatch. A thunk function will always be called with (dispatch, getState) as its arguments, and you can use them inside the thunk as needed
+        - Thunk typically dispatch plain actions using action creator like dispatch(increment())
+# AJAX:
 
 
 
