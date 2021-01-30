@@ -578,10 +578,59 @@ Selectors are functions that get the Redux state as an argument, and return some
 - Thunk Functions
         - one the thunk middleware has been added to the redux store, it allow you to pass thunk functions directly to store.dispatch. A thunk function will always be called with (dispatch, getState) as its arguments, and you can use them inside the thunk as needed
         - Thunk typically dispatch plain actions using action creator like dispatch(increment())
+# XMLHttpRequest:
+- The constructor initializes an XMLHttpRequest. It must be called before any other method calls.
+1. onreadystatechange an eventhandekr that is called whenever the readystate attribute changes
+2. readyState - readonly return an unsigned short, the state of the request
+3. response - read only Returns an ArrayBuffer, Blob, Document, JavaScript object, or a DOMString, depending on the value of XMLHttpRequest.responseType, that contains the response entity body.
+4. responseText -  Returns a DOMString that contains the response to the request as text, or null if the request was unsuccessful or has not yet been sent.
+5. responseType - is an  enumerated value that defines teh response type
+6. responseURL - return the serialized URL of the response or the empty string if the URL is null
+7. responseXML - Returns a Document containing the response to the request, or null if the request was unsuccessful, has not yet been sent, or cannot be parsed as XML or HTML. Not available in workers.
+8. status - Returns an unsigned short with the status of the response of the request.
+9. statusText - Returns a DOMString containing the response string returned by the HTTP server. Unlike XMLHttpRequest.status, this includes the entire text of the response message ("200 OK", for example).
+10. timeout - Is an unsigned long representing the number of milliseconds a request can take before automatically being terminated.
+11. upload - is an XMLHttpRequestUpload, representing the upload process.
+12. withCredentials - Is a Boolean that indicates whether or not cross-site Access-Control requests should be made using credentials such as cookies or authorization headers.
+
+# Event Handlers:
+- onreadystatechange as a property of the XMLHttpRequest instance is supported in all browsers
+# Methods
+ - abort() Aborts the request if it has already been sent.
+ - getAllResponseHeaders() Returns all the response headers, separated by CRLF, as a string, or null if no response has been received.
+ - getResponseHeader() Returns the string containing the text of the specified header, or null if either the response has not yet been received or the header doesn't exist in the response.
+ - open() initializes a request
+ - overrodeMimeType() Overrides the MIME type returned by the server.
+ - send() sends the request. if the request is asynchronous 
+ - setRequestHeader() sets the value of an HTTP request header. you must call setRequestHeader() after open(), but befero send()
+
 # AJAX:
+- Asynchronous JavaScripts and XML, while not a technology in itself, is a term corned in 2005,that describes a new approach  to using a number of existing technologes together including HTML or XHTML, CSS, JavaScript, DOM, XML, XSLT, and most importantly the XMLHttpRequest object.
+- web apllication are able to make quick, incremental update to use ineterface without reloading the entire browser page This makes the application faster and more responsive to user actions
+- X in AJAX stand for XML but JSOn used more than XML, it much advantage and a part of JavaScript. Both Json and Xml are used for packaging information in the Ajax model
+## documentation
+- The XMLHttpRequest API is the core of Ajax. This article will explain how to use some Ajax techniques, like:
+1. Analyzing and manipulating the response of the server
+2. Monitoring the progress of a request
+3. Submitting forms and upload binary files – in pure Ajax, or using FormData objects
+4. Using Ajax within Web workers
+- Fetch API:
+        - The Fetch API provides an interface for fetching resources. It will seem familiar to anyone who has used XMLHTTPRequest, but this API provides a more powerful and flexible feature set.
+- Server-sent events
+        - Traditionally, a web page has to send a request to the server to receive new data; that is, the page requests data from the server. With server-sent events, it's possible for a server to send new data to a web page at any time, by pushing messages to the web page. These incoming messages can be treated as Events + data inside the web page. See also: Using server-sent events.
+- Pure-Ajax navigation example:
+        - This article provides a working (minimalist) example of a pure-Ajax website composed only of three pages.
+- Sending and Receiving Binary Data
+        - The responseType property of the XMLHttpRequest object can be set to change the expected response type from the server.
+        - Possible value are the empty string (default), arraybuffer, blob, document, json, and text
+        - the response property will contain teh entity body according to responseType ArrayBuffer, Blob, Document, JSON, or string. This article will show some Ajax I/O techniques.
+- XML
+- Parsing and serializing XMl
+- FileReader API: The FileReader API lets web applications asynchronously read the contents of files (or raw data buffers) stored on the user's computer, using File or Blob objects to specify the file or data to read. File objects may be obtained from a FileList object returned as a result of a user selecting files using the "input" element, from a drag and drop operation's DataTransfer object, or from the mozGetAsFile() API on an HTMLCanvasElement.
 
-
-
+- XPath: XML path language, As well as this, it can also be used to test addressed nodes within a document to determine whether they match a pattern or not.
+## tools
+- axios : Promise based HTTP client, which uses XMLHttpRequest internally.
                 
 
 
