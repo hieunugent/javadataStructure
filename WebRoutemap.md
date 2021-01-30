@@ -640,9 +640,80 @@ var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", "http://www.example.org/example.txt");
 oReq.send();
-```             
+```        
+# Asynchronous request
+```javascript
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "/bar/foo.txt", true);
+xhr.onload = function (e) {
+  if (xhr.readyState === 4) {
+    if (xhr.status === 200) {
+      console.log(xhr.responseText);
+    } else {
+      console.error(xhr.statusText);
+    }
+  }
+};
+xhr.onerror = function (e) {
+  console.error(xhr.statusText);
+};
+xhr.send(null); 
+```
+#writing a function to read  an external file
+```javascript
+function xhrSuccess() {
+    this.callback.apply(this, this.arguments);
+}
 
+function xhrError() {
+    console.error(this.statusText);
+}
 
+function loadFile(url, callback /*, opt_arg1, opt_arg2, ... */) {
+    var xhr = new XMLHttpRequest();
+    xhr.callback = callback;
+    xhr.arguments = Array.prototype.slice.call(arguments, 2);
+    xhr.onload = xhrSuccess;
+    xhr.onerror = xhrError;
+    xhr.open("GET", url, true);
+    xhr.send(null);
+}
+function showMessage(message) {
+    console.log(message + this.responseText);
+}
+
+loadFile("message.txt", showMessage, "New message!\n\n");
+```
+## using timeout
+```javascript
+function loadFile(url, timeout, callback) {
+    var args = Array.prototype.slice.call(arguments, 3);
+    var xhr = new XMLHttpRequest();
+    xhr.ontimeout = function () {
+        console.error("The request for " + url + " timed out.");
+    };
+    xhr.onload = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                callback.apply(xhr, args);
+            } else {
+                console.error(xhr.statusText);
+            }
+        }
+    };
+    xhr.open("GET", url, true);
+    xhr.timeout = timeout;
+    xhr.send(null);
+}
+// usage:
+function showMessage (message) {
+    console.log(message + this.responseText);
+}
+
+loadFile("message.txt", 2000, showMessage, "New message!\n");
+
+```
+# SYnchronous request
 
 
 
