@@ -631,7 +631,16 @@ Selectors are functions that get the Redux state as an argument, and return some
 - XPath: XML path language, As well as this, it can also be used to test addressed nodes within a document to determine whether they match a pattern or not.
 ## tools
 - axios : Promise based HTTP client, which uses XMLHttpRequest internally.
-                
+```javascript
+function reqListener () {
+  console.log(this.responseText);
+}
+
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "http://www.example.org/example.txt");
+oReq.send();
+```             
 
 
 
