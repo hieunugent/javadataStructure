@@ -1,5 +1,7 @@
 # Architecture
 - overview of servers, databases, routing , anything else that happens between when a client makes a request and receives a response
+- Server DataBase Programming Language API
+
 ## Back-end Architecture
 - the code that runs on the server, that receives requests from  the  clients, and contains the logic to send the appropriate  data back to the client
 - the back end also include the database which will persistently store all of the data for the application
@@ -42,3 +44,4 @@ SuperCoolShop has an huge number of products, and many different categories for 
 8. The response travels across the internet, back to Alice’s computer.
 
 9. Alice’s browser receives the response and uses that information to create and render the view that Alice ultimately sees!
+
