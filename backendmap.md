@@ -44,4 +44,7 @@ SuperCoolShop has an huge number of products, and many different categories for 
 8. The response travels across the internet, back to Alice’s computer.
 
 9. Alice’s browser receives the response and uses that information to create and render the view that Alice ultimately sees!
+# Memory management
+- Memory management is the functionality of an operating system which handles or manages primary memory and moves processes back and forth between main memory and disk during execution. Memory management keeps track of each and every memory location, regardless of either it is allocated to some process or it is free. It checks how much memory is to be allocated to processes. It decides which process will get memory at what time. It tracks whenever some memory gets freed or unallocated and correspondingly it updates the status.
+
 
