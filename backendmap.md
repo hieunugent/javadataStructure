@@ -82,11 +82,22 @@ The loader generates these addresses at the time when a program is loaded into m
 - When a process is to be executed, its corresponding segmentation are loaded into non-contiguous memory though every segment is loaded into a contiguous block of available memory.
 - Segmentation memory management works very similar to paging but here segments are of variable-length where as in paging pages are of fixed size.
 - A program segment contains the program's main function, utility functions, data structures, and so on. The operating system maintains a segment map table for every process and a list of free memory blocks along with segment numbers, their size and corresponding memory locations in main memory. For each segment, the table stores the starting address of the segment and the length of the segment. A reference to a memory location includes a value that identifies a segment and an offset.
-
-
-
-
-
+# Concurrrentcy
+- Concurrency means executing multiple tasks at the same time but not necessarily simultaneously. In a concurrent application, two tasks can start, run, and complete in overlapping time periods i.e Task-2 can start even before Task-1 gets completed.
+- In the computer science world, the way how concurrency is achieved in various processors is different. In a single core environment (i.e your processor is having a single core), concurrency is achieved via a process called context-switching. If its a multi-core environment, concurrency can be achieved through parallelism.
+# parallelism
+- Consider you are given two tasks of cooking and speaking to your friend over the phone. You could do these two things simultaneously. You could cook as well as speak over the phone. Now you are doing your tasks parallelly.
+- Parallelism means performing two or more tasks simultaneously. Parallel computing in computer science refers to the process of performing multiple calculations simultaneously.
+# Threads 
+- Threads are a sequence of execution of code which can be executed independently of one another. It is the smallest unit of tasks that can be executed by an OS. A program can be single threaded or multi-threaded.
+# Process
+- A process is an instance of a running program. A program can have multiple processes. A process usually starts with a single thread i.e a primary thread but later down the line of execution it can create multiple threads.
+# Synchronous
+- Imagine you were given to write two letters one to your mom and another to your best friend. You can not at the same time write two letters unless you are a pro ambidextrous.
+- In a synchronous programming model, tasks are executed one after another. Each task waits for any previous task to complete and then gets executed.
+# Asynchronous
+- Imagine you were given to make a sandwich and wash your clothes in a washing machine. You could put your clothes in the washing machine and without waiting for it to be done, you could go and make the sandwich. Here you performed these two tasks asynchronously.
+- In an asynchronous programming model, when one task gets executed, you could switch to a different task without waiting for the previous to get completed.
 
 
 
