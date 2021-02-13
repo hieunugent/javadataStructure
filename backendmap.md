@@ -98,6 +98,12 @@ The loader generates these addresses at the time when a program is loaded into m
 # Asynchronous
 - Imagine you were given to make a sandwich and wash your clothes in a washing machine. You could put your clothes in the washing machine and without waiting for it to be done, you could go and make the sandwich. Here you performed these two tasks asynchronously.
 - In an asynchronous programming model, when one task gets executed, you could switch to a different task without waiting for the previous to get completed.
+# NOde JS
+- more in Nodejs.org
+- import the moduler before use
+- require('localfile') 
+- every file in node has it own scope so if want use it on other file it must be export in that file but module.exports = variable
+
 
 
 
