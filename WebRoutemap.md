@@ -8,7 +8,7 @@
    - but the thing is can not connnect the cable between the house, so that using the telephone cable  and we need a Modem
    - the modem will turn the infomation form our network into infomation manageable by the telephone infrastructure and vice versa
    - to send message from our network we want to reach we have to connect out network to an internet Service Provider(ISP)
-   - ISP is a company that manages some speacial router taht are all linked together and  can also access other ISP's routers
+   - ISP is a company that manages some speacial router that are all linked together and  can also access other ISP's routers
    - finding computer: you have to specify which one, any computer to a network has a unique  address that identified it call "IP adddress"
    - example 192.167.12.1 that is not easy to remember by human so to make easier we have domain name
 ## What is Domain Name?
@@ -22,6 +22,16 @@
    - Hyper text Transfer Protocol
    - WWW is about communicate between web clients and servers
    - communication by Sending HTTP Requests and HTTP Responses
+
+
+## Client: the user-agent
+- The user-agent is any tool that acts on the behalf of the user. This role is primarily performed by the Web browser; other possibilities are programs used by engineers and Web developers to debug their applications.
+- The browser is always the entity initiating the request. It is never the server (though some mechanisms have been added over the years to simulate server-initiated messages).
+- To present a Web page, the browser sends an original request to fetch the HTML document that represents the page. It then parses this file, making additional requests corresponding to execution scripts, layout information (CSS) to display, and sub-resources contained within the page (usually images and videos). The - Web browser then mixes these resources to present to the user a complete document, the Web page. Scripts executed by the browser can fetch more resources in later phases and the browser updates the Web page accordingly.
+
+A Web page is a hypertext document. This means some parts of displayed text are links which can be activated (usually by a click of the mouse) to fetch a new Web page, allowing the user to direct their user-agent and navigate through the Web. The browser translates these directions in HTTP requests, and further interprets the HTTP responses to present the user with a clear response.
+
+
 ## Browers and how they work?
    - is client run on a computer that contact the web server and request information
    - display the info that webserver response

@@ -104,6 +104,12 @@ The loader generates these addresses at the time when a program is loaded into m
 - require('localfile') 
 - every file in node has it own scope so if want use it on other file it must be export in that file but module.exports = variable
 - can not send 2 response after one resquest
+# Mongoose:
+- using mongoose API to create the ENDPOINT 
+- this API has CRUID 
+
+## REST API
+- predefine LIBRARY
 # JS
 - call backfunction :  is a function that provied as an argument to another function with the intention  of having it call later on
 # VIew engine 
