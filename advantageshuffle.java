@@ -5,6 +5,12 @@
 // sortedB[j] is always the smallest unassigned element in B 
 // reconstruct teh answer form annotations(assigned, remaining)  
 ////if there is some a assigned to b ....
+import java.io.*;
+import java.util.*;
+
+import java.util.LinkedList;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 class Solution{
     public int[] advantageCount(int[] A, int[] B){
